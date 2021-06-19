@@ -1,0 +1,56 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+    background: #00000008;
+}
+
+.card-front {
+    position: relative!important;
+    width: 95%!important;
+}
+
+.form-group {
+    width: 45%;
+}
+
+.check_box {
+    margin: 0 2rem 1rem;
+}
+
+.check {
+    margin: 0;
+    width: 7% !important;
+    height: 16px !important;
+    left: 0!important;
+    margin-top: 4px;
+}
+
+#submit_btn {
+    width: 35%;
+    font-size: 18px!important;
+}
+
+/* media query */
+/* MQ FOR 768PX */
+@media (min-width:768px){
+    .card-front {
+        width: 65%!important;
+    }
+    .check{
+        width: 4%!important;
+    }
+    
+.check_box {
+    margin: 0 4rem 1rem;
+}
+}

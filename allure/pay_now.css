@@ -1,0 +1,142 @@
+.free_ship {
+    height: 55px;
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 4px;
+}
+
+.free_ship h5, .free_ship h6 {
+    font-size: 16px;
+}
+
+hr {
+    width: 94%;
+}
+
+.sub_tot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_tot b {
+    flex: 1;
+}
+
+.sub_tot p {
+    flex: 2;
+}
+
+.detail {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 30px 0px;
+}
+
+hr {
+    width: 96%;
+    margin: 5px auto;
+}
+
+.add_box {
+    border: 1px solid #ddd;
+    background: #6c757d17;
+    width: 96%;
+    margin: 20px auto;
+}
+
+.product_box {
+    display: flex;
+}
+
+.pro_img {
+    flex: 2;
+}
+
+.pro_img img {
+    width: 100%;
+}
+
+.pro_name {
+    flex: 3;
+    padding: 5px 12px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.pro_price {
+    flex: 1;
+    padding: 5px 12px;
+}
+
+.sub_tot {
+    display: flex;
+}
+
+.sub_tot p {
+    flex: 1;
+    padding-left: 15px;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.sub_tot b {
+    padding-left: 2rem;
+    flex: 1;
+}
+
+.pay_now {
+    background: black;
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+.pay_now:hover{
+    text-decoration: underline;
+}
+.pay_now a {
+    color: white;
+}
+
+/* MQ FOR MN-500PX */
+
+@media (min-width:500px) {
+    .pay_now {
+        margin: 0px auto 30px;
+    }
+}
+
+/* MQ FOR MN-500PX */
+
+/* MQ FOR MN-1048PX */
+
+@media (min-width:1048px) {
+    .free_ship {
+        top: -8px;
+    }
+    .add_box {
+        width: 90%;
+        position: relative;
+    }
+    .detail {
+        padding: 10px 80px 0px;
+    }
+    .sub_tot b {
+        padding-left: 6rem;
+    }
+    .price_detail {
+        width: 50%;
+        position: absolute;
+        bottom: 3px;
+        right: 4px;
+    }
+    .pro_img {
+        flex: 1;
+    }
+    .pay_now {
+        width: 15%;
+        margin-bottom: 60px;
+    }
+}
+
+/* MQ FOR MN-1048PX */

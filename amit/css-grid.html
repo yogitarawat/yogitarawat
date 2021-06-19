@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-grid</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        padding: 1rem;
+    }
+
+    .container {
+        display: grid;
+        /* grid-template-columns: 300px 200px 200px; */
+        /* grid-template-columns: 300px 200px auto;  -- auto takes the remaimimg width*/
+        /* grid-template-columns: 300px auto 200px; */
+        /* grid-template-columns:repeat(3, 200px); */
+        /* grid-template-columns:repeat(3, auto); */
+        /* grid-template-columns: 1fr 4fr 1fr; */
+        /*same apply for gtr- grid template rows*/
+
+        /* for reponsive use auto-fit and minmax*/
+        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+
+    .box {
+        background: cyan;
+        border: 2px solid palevioletred;
+        padding: .8rem;
+    }
+
+    .box:first-child {
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-rows: 1fr 4fr 2fr;
+        grid-auto-rows: 1fr;
+        grid-gap: .5rem;
+        /*other rows*/
+    }
+
+    /* grid-template-area */
+    .grid {
+        background: rgba(78, 77, 77, 0.507);
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'header header header'
+        'section section aside'
+        'footer footer footer'
+        ;
+    }
+
+    #header{
+        grid-area: header;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area:aside ;
+    }
+    #footer{
+        grid-area:footer ;
+    }
+
+    .items {
+        background: red;
+        color: white;
+        border: 2px solid white;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem;
+    }
+</style>
+
+<body>
+    <h1> CSS-grid grid-template-columns</h1>
+    <div class="container">
+        <div class="box">this is a box-1</div>
+        <div class="box">this is a box-2</div>
+        <div class="box">this is a box-3</div>
+        <div class="box">this is a box-4</div>
+        <div class="box">this is a box-5</div>
+        <div class="box">this is a box-6</div>
+        <div class="box">this is a box-7</div>
+        <div class="box">this is a box-8</div>
+        <div class="box">this is a box-9</div>
+    </div>
+
+    <hr style="height: .2rem; background: #000; margin: 1rem 0;">
+
+    <h1> CSS-grid grid-template-columns</h1>
+    <div class="container1">
+        <div class="box">this is a box-1</div>
+        <div class="box">this is a box-2</div>
+        <div class="box">this is a box-3</div>
+        <div class="box">this is a box-4</div>
+        <div class="box">this is a box-5</div>
+        <div class="box">this is a box-6</div>
+        <div class="box">this is a box-7</div>
+        <div class="box">this is a box-8</div>
+        <div class="box">this is a box-9</div>
+    </div>
+
+    <hr style="height: .2rem; background: #000; margin: 1rem 0;">
+
+    <h1>Grid-template-area</h1>
+    <div class="grid">
+        <div class="items" id="header">
+            Home About Services Contact Us
+        </div>
+        <div class="items" id="section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea possimus accusantium dolores.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla sint voluptatum quod id, sapiente
+            aliquam modi iusto repellendus assumenda eum numquam commodi praesentium sed dignissimos cumque! Iste eius
+            accusantium recusandae atque est ad. Voluptas quas ipsum aliquam sunt explicabo accusamus blanditiis
+            repudiandae quis. Facilis pariatur voluptatem et dolores? Unde!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus, saepe expedita molestiae alias
+            facilis. Voluptates dolorem beatae dolores sequi ipsum ut itaque aut voluptate ratione eum, aspernatur
+            delectus accusamus distinctio, fugit, unde commodi velit cum mollitia repellat eligendi tempore est tenetur
+            quidem. Ipsam omnis iusto, sunt sed laborum atque.
+        </div>
+        <div class="items" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea possimus accusantium dolores.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, at quas adipisci beatae blanditiis odio
+            maiores repellat alias sunt inventore optio velit sapiente reiciendis a.
+        </div>
+        <div class="items" id="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea possimus accusantium dolores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, beatae.
+        </div>
+    </div>
+
+    <hr style="height: .2rem; background: #000; margin: 1rem 0;">
+
+
+</body>
+
+</html>

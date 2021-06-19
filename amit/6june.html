@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"> -->
+    <title>6june</title>
+</head>
+<style>
+    .borderimg {
+        border: 10px solid red;
+        border-image: url(bangalore-hero.png) 30 stretch;
+    }
+
+    .shadow {
+        width: 250px;
+        padding: 1rem;
+        background-color: red;
+        /* box-shadow outside the box */
+        /* box-shadow: 10px 20px blue;  offset-x offset-y color */
+        /* box-shadow: 10px 20px 12px blue;  x y blur-radius color */
+        /* box-shadow: 10px 20px 12px 9px blue;   x y blur-radius spread-radius color also give in -ve */
+
+        /* box-shadow inside the box */
+        /* box-shadow: inset 13px 10px black; */
+
+        /* you can also give multiple box-shadow  */
+        box-shadow: 10px 15px pink, 15px 8px yellow;
+
+    }
+
+    .shadow h2{
+        text-shadow: 5px 7px blue; /*same as box-shadow*/
+    }
+</style>
+
+<body>
+    <h1>FIELDSET</h1>
+    <p>This tag allows you to combine a group of HTML element in a form. It draws a box around the element.</p>
+    <form action="#">
+        <fieldset>
+            name: <input type="text">
+            email: <input type="email">
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+    <hr style="height: 2px; background-color: rgb(75, 204, 24);  margin-top: 2rem;">
+
+    <h1>LEGEND</h1>
+    <p>This tag is used as a title or a caption for the fieldset element.</p>
+    <fieldset>
+        <legend>TITLE</legend>
+        <p>
+            Hello everyone ! Welcome back to my channel.i hope you all are doing good.
+        </p>
+    </fieldset>
+
+    <hr style="height: 2px; background-color: rgb(75, 204, 24);  margin-top: 2rem;">
+
+    <h1>DATALIST</h1>
+    <P>It allows you to create a dropdown & searchable text inside an input element with just native HTML.</P>
+    <input list="vegetable">
+    <datalist id="vegetable">
+        <!-- list or id value should be same -->
+        <option value="Cabbage">Cabbage</option>
+        <option value="Brinjal">Brinjal</option>
+        <option value="Spinach">Spinach</option>
+        <option value="Onion">Onion</option>
+    </datalist>
+    <input type="submit" value="submit">
+
+    <hr style="height: 2px; background-color: rgb(75, 204, 24);  margin-top: 2rem;">
+
+    <h1>PROGRESS</h1>
+    <p>This tag allows you to easily create progress bars using HTML.</p>
+    <progress>20%</progress> <br>
+    <progress value="70" max="100">20%</progress>
+    <!--with "value and max" attributes-->
+
+    <hr style="height: 2px; background-color: rgb(75, 204, 24);  margin-top: 2rem;">
+
+    <h1>DETAILS and SUMMARY</h1>
+    <p>
+        This tag allows us to add additional elements that we can view or hide after clicking on the element
+        <mark>summary tag</mark> that puts inside of it.
+    </p>
+    <details>
+        <summary>click me</summary>
+        <p>This tag allows us to add additional elements that we can view or hide after clicking on the element
+            summary tag that puts inside of it.</p>
+    </details>
+
+    <hr style="height: 2px; background-color: rgb(75, 204, 24);  margin-top: 2rem;">
+
+    <div class="borderimg"></div>
+
+    <hr style="height: 2px; background-color: rgb(75, 204, 24);  margin-top: 2rem;">
+
+
+    <div class="shadow">
+        <h2>yogita</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magni commodi doloribus perspiciatis expedita
+            nesciunt at officiis earum illo. Eaque iste exercitationem consequuntur rem nemo amet optio suscipit velit
+            voluptatibus, cumque ea.
+        </p>
+    </div>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe / Animation / Transition / Transform</title>
+</head>
+<style>
+    /* CSS-Animation */
+    .box {
+        width: 200px;
+        height: 300px;
+        background: yellow;
+        position: relative;
+        animation-name: yogi;
+        animation-duration: 1s;
+        animation-iteration-count: 3;
+    }
+
+    /* @keyframes yogi {
+        from {
+            width: 200;
+        }
+        to {
+            width: 599px;
+        }
+    } */
+    @keyframes yogi {
+        0% {
+            top: 0;
+            left: 0;
+            background: green;
+        }
+
+        25% {
+            top: 199px;
+            left: 0;
+            background: red;
+        }
+
+        50% {
+            top: 199px;
+            left: 400px;
+            background: cyan;
+        }
+
+        100% {
+            top: 0;
+            left: 400px;
+            background: yellow;
+        }
+    }
+
+
+    /* CSS- Transition */
+    #box {
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background: red;
+        /* transition-property: background-color;
+        transition-duration: 1s;
+        transition-delay: 3s;
+        transition-timing-function: ease-out; */
+        transition: all 2s ease-in .3s;
+    }
+
+    #box:hover {
+        background: rgb(170, 238, 81);
+        width: 400px;
+        height: 500px;
+        border-radius: 50%;
+        font-size: 45px;
+
+    }
+
+
+    /* CSS-Transform */
+    .cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        background: green;
+    }
+    .box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: brown;
+        border:2px solid red;
+        border-radius:8px ;
+        width: 300px;
+        height: 150px;
+        transition: all 0.5s ease-in ;
+    }
+    .box1:hover{
+        /* transform: rotate(360deg); */
+        /* transform: skew(60deg); */
+        /* transform: scale(3); */
+        /* transform: translateX(100px); */
+        /* transform: translateY(100px); */
+        transform: translate(100px, 150px);
+
+    }
+</style>
+
+<body>
+    <!-- CSS Transform -->
+    <h1>Css-Transform</h1>
+    <div class="cont">
+        <div class="box1">
+        This is a box1
+        </div>
+    </div>
+
+    <hr>
+    <!-- for css transition -->
+    <h1>CSS-Transition</h1>
+    <div class="container">
+        <div id="box">
+            This is my BOX
+        </div>
+    </div>
+
+    <hr>
+    <!-- for animation  -->
+    <h1>CSS-Animation</h1>
+    <div class="box">annimation</div>
+
+</body>
+
+</html>
