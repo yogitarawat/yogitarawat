@@ -409,7 +409,7 @@ span a{
 
 @media (max-width:476px) {
     .container::before {
-        height: 96%;
+        height: 99%;
     }
     .sidebar {
         width: 50%;
