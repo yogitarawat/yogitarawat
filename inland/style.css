@@ -411,12 +411,25 @@ span a{
     .sidebar {
         width: 50%;
     }
+    .item img {
+        width: 127px;
+    }
+    .item p {
+        font-size: 13px;
+    }
+   
+    .section {
+        font-size: 20px;
+    }
 }
 
 /* MQ for max-width 376px */
 
 @media (max-width:376px) {
-    .container::before {
-        height: 100%;
+    .btn {
+        padding: .4rem .6rem;
+    }
+    .banner p {
+        font-size: 14px;
     }
 }
