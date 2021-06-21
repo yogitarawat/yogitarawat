@@ -408,10 +408,15 @@ span a{
 /* MQ for max-width 476px */
 
 @media (max-width:476px) {
-    .container::before {
-        height: 99%;
-    }
     .sidebar {
         width: 50%;
+    }
+}
+
+/* MQ for max-width 376px */
+
+@media (max-width:376px) {
+    .container::before {
+        height: 100%;
     }
 }
