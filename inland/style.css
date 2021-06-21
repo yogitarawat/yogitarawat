@@ -408,6 +408,9 @@ span a{
 /* MQ for max-width 476px */
 
 @media (max-width:476px) {
+    .container::before {
+        height: 96%;
+    }
     .sidebar {
         width: 50%;
     }
