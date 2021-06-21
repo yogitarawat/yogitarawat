@@ -388,7 +388,7 @@ footer {
 }
 
 .footer-item p {
-    color: white;
+    color: white !important;
     font-family: proxi_thin;
     padding: 0 0 2rem 1rem;
 }
