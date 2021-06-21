@@ -6,24 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>index</title>
 </head>
 
 <body>
     <div class="container">
+
         <header>
             <button class="ham">
                 <span></span>
             </button>
+
             <ul class="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
+
             <span class="btn">Log In</span>
+
         </header>
+
         <div class="sidebar">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -42,28 +54,34 @@
             </p>
             <span class="btn">Learn more</span>
         </div>
+
     </div>
 
     <h1 class="section">OUR SERVICES</h1>
+
     <div class="grid">
         <div class="item" id="a">
             <img src="min.png" alt="">
             <h2>No Minimum Order</h2>
             <p>Order in for yourself or for the group, with no restrictions on order value</p>
         </div>
+
         <div class="item" id="b">
             <img src="live.png" alt="">
             <h2>Live Order Tracking</h2>
             <p>Know where your order is at all times, from the restaurant to your doorstep</p>
         </div>
+
         <div class="item" id="c">
             <img src="delivery.png" alt="">
             <h2>Lightning-Fast Delivery</h2>
             <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
         </div>
+
     </div>
 
-    <h1 class="section2">Why choose Maersk Inland Delivery?</h1>
+    <h1 class="section2">Why choose Inland Delivery?</h1>
+
     <div class="grid2">
         <div class="item" id="d">
             <img src="chain_pictogram.svg" alt="">
@@ -71,97 +89,161 @@
             <p>Book your end-to-end transport, including ocean and inland, in a single transaction with Maersk, limiting
                 the number of touchpoints.</p>
         </div>
+
         <div class="item" id="e">
             <img src="stand.svg" alt="">
             <h2>Standalone options</h2>
             <p>No matter your ocean partner, Inland Delivery is available as a standalone service along with the full
                 benefits of our intermodal simplicity, flexibility and security.</p>
         </div>
+
         <div class="item" id="f">
             <img src="globe_pictogram.svg" alt="">
             <h2>Reach new markets</h2>
             <p>Our network across 300+ ports and tie-ups with partners in over 130 countries gives you a fast and
                 reliable connection.</p>
         </div>
+
         <div class="item" id="g">
             <img src="load-and-empty-container-pictogram.svg" alt="">
             <h2>Cross-border services</h2>
             <p>We handle your cargo movements on all exports and imports, including customs and paperwork, to give you a
                 smoother experience.</p>
         </div>
+
         <div class="item" id="h">
             <img src="stopwatch-error_pictogram.svg" alt="">
             <h2>Timely deliveries</h2>
             <p>Get your cargo delivered as per your schedule, leveraging our global inland coverage with our
                 market-leading ocean network.</p>
         </div>
+
         <div class="item" id="i">
             <img src="environmental-friendly_pictogram.svg" alt="">
             <h2>Sustainability</h2>
             <p>We are focused on sustainability and we are developing solutions to limit our impact on the environment.
             </p>
         </div>
+
     </div>
+
+    <footer>
+        <div class="box">
+
+            <span class="c_name">
+                Inland Delivery
+            </span>
+
+            <span class="about">
+                Home | About | Pricing | FAQ | Contact
+            </span>
+
+            <span class="copyr">
+                Inland Delivery &copy; 2020
+            </span>
+
+        </div>
+
+        <div class="box">
+
+            <span class="add">
+                <p>
+                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                </p>
+                <p>B-14/20 nehru colony dehradun, uttrakhand 248001</p>
+            </span>
+
+            <span class="numb">
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <p>+91-8967458928</p>
+            </span>
+
+            <span class="mail">
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <p>yogitarawat@yahoo.com</p>
+            </span>
+
+        </div>
+
+        <div class="box">
+
+            <span class="a_comp">
+                <strong>About the company</strong>
+            </span>
+
+            <span class="a_comp">
+                Inland Delivery gives you all the advantages of our logistics integrator experience. We can help you
+                manage everything.
+            </span>
+
+            <span class="social">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            </span>
+
+        </div>
+
+    </footer>
 
 
     <script src="js\jquery.js"></script>
     <script>
         $(window).on("load", function () {
-                if ($(this).scrollTop() > 50) {
-                    $("header").css("background-color", "#000");
-                    $(".ham").addClass("hamsrl");
-                    $("header .btn").addClass("btnsticky");
 
-                }
+            if ($(this).scrollTop() > 50) {
+                $("header").css("background-color", "#000");
+                $(".ham").addClass("hamsrl");
+                $("header .btn").addClass("btnsticky");
+            }
+            
         });
+
         $(document).ready(function () {
 
             $(".ham").click(function () {
                 $(".sidebar").toggleClass("sidebar_hide");
                 $(".ham").toggleClass("closebtn");
 
-        });
+            });
 
-            
+            $(document).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $("header").css("background-color", "#000");
+                    $(".ham").addClass("hamsrl");
+                    $(".nav li a").addClass("class1");
 
-        $(document).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $("header").css("background-color", "#000");
-                $(".ham").addClass("hamsrl");
+                    $("header .btn").addClass("btnsticky");
 
+                    $("header ul li a, header .btn").hover(function () {
+                        $(this).css({ "text-decoration": "underline" });
+                        }, function () {
+                        $(this).css("text-decoration", "none");
+                    });
 
-                $(".nav li a").addClass("class1");
+                } else {
+                    $("header").css({ "background-color": "transparent" });
+                    $(".ham").removeClass("hamsrl");
 
-                $("header .btn").addClass("btnsticky");
+                    $(".nav li a").removeClass("class1");
+                    $("header .btn").removeClass("btnsticky");
 
-                $("header ul li a, header .btn").hover(function () {
-                    $(this).css({ "text-decoration": "underline" });
-                }, function () {
-                    $(this).css("text-decoration", "none");
-                });
+                    $("header ul li a, header .btn").hover(function () {
+                        $(this).css({ "text-decoration": "none" });
+                    }, function () {
+                        $(this).css("text-decoration", "none");
+                    });
+                }
 
-            } else {
-                $("header").css({ "background-color": "transparent" });
-                $(".ham").removeClass("hamsrl");
-
-                $(".nav li a").removeClass("class1");
-                $("header .btn").removeClass("btnsticky");
-
-                $("header ul li a, header .btn").hover(function () {
-                    $(this).css({ "text-decoration": "none" });
-                }, function () {
-                    $(this).css("text-decoration", "none");
-                });
-
-            }
+            });
 
         });
-        });
-
 
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    
 
 </body>
 

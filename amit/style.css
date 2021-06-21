@@ -224,7 +224,8 @@ header .btn {
     margin: auto;
     display: block;
     text-align: center;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
 }
 
 .banner .btn {
@@ -312,9 +313,39 @@ header .btn {
 }
 
 .item p {
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Varela Round', sans-serif;
 }
 
+/* footer */
+footer{
+    background: #000;
+    color: white;
+    padding: 3rem 5rem;
+    margin-top: 2rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.box span{
+    padding-top: 1.3rem;
+}
+.box p{
+    display: inline;
+}
+.add{
+    display: flex;
+}
+
+span a{
+    color: white;
+    padding-right: 1rem;
+    font-size: 21px;
+}
 /* media query */
 
 /* MQ for max-width 1200px */
