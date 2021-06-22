@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="js/index.js">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+
+  <!-- font-icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- font-family -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <title>Best broadband plans in India</title>
+</head>
+
+<body>
+  <header>
+    <div class="image">
+      <img src="logo.png">
+      <!-- <i class="fas fa-wifi"></i> -->
+    </div>
+    <div class="navb">
+      <ul class="mb-0">
+        <li class="pre">PREPAID
+          <div class="drop" id="one">
+            <span>Recharge</span>
+            <span>New Prepaid SIM</span>
+            <span>View Plans</span>
+            <span>International Roaming</span>
+            <span>Port To Prepaid</span>
+          </div>
+        </li>
+
+        <li class="post">POSTPAID
+          <div class="drop" id="two">
+            <span>Pay Bill</span>
+            <span>Buy New Connetion</span>
+            <span>View Plans</span>
+            <span>Prepaid To Postpaid</span>
+            <span>Free SIM Delievery</span>
+          </div>
+        </li>
+
+        <li class="broad">BROADBAND
+          <div class="drop" id="three">
+            <span>Pay Bills</span>
+            <span>Buy New Connection</span>
+            <span>View Plans</span>
+          </div>
+        </li>
+
+        <li class="offers">OFFERS
+          <div class="drop" id="four">
+            <span>Plans</span>
+            <span>Services</span>
+            <span>E-Refund</span>
+          </div>
+        </li>
+        <li class="support">SUPPORT
+          <div class="drop" id="five">
+            <span>FAQ</span>
+            <span>Contact Us</span>
+            <span>My Account</span>
+            <span>My Orders</span>
+            <span>Find A Store</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="search anything here">
+      <a href="#"><i class="fa fa-search"></i></a>
+    </div>
+  </header>
+
+  <!-- carousel slider -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="bangalore-hero.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="bangalore_vas_web.png" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="crp-bangalore.png" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <footer>
+    <div class="box1">
+      <ul class="about">
+        <li>About</li>
+        <li>Services</li>
+        <li>Get In Touch</li>
+        <li>Privacy</li>
+        <li>FAQ</li>
+      </ul>
+      <ul class="social">
+        <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="box2">
+      <span><strong>SUBSCRIBE</strong></span>
+      <span>Get monthly updates and free resources.</span>
+      
+      <div class="button">
+        <div class="btn1">Email</div>
+        <div class="btn2">Subscribe</div>
+      </div>
+    
+    </div>
+
+  </footer>
+
+  <div class="copyright">
+    © Copyright 2018 dunder-mifflin- All Rights Reserved
+  </div>
+
+
+  <!-- jquery code-->
+  <script src="js/jquery.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(".pre").hover(function () {
+        $("#one").slideToggle(200);
+      });
+
+      $(".post").hover(function () {
+        $("#two").slideToggle(200);
+      });
+
+      $(".broad").hover(function () {
+        $("#three").slideToggle(200);
+      });
+
+      $(".offers").hover(function () {
+        $("#four").slideToggle(200);
+      });
+
+      $(".support").hover(function () {
+        $("#five").slideToggle(200);
+      });
+
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+
+</html>

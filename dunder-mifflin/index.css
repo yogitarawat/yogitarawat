@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #15384e;
+    position: fixed;
+    z-index: 1;
+}
+
+.image {
+    width: 25%;
+    padding: 0 0 0 2rem;
+}
+
+.image img {
+    width: 136px;
+    padding: 8px 10px;
+}
+
+.navb {
+    width: 49%;
+    margin: auto;
+}
+
+.navb ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navb ul li {
+    padding: 2rem 1rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.navb ul li:hover {
+    background: white;
+    color: #0f4b85;
+}
+
+.search {
+    width: 18%;
+    margin: auto;
+    text-align: center;
+}
+
+.search input {
+    width: 200px;
+    padding: 6px 0 6px 15px;
+    border: 1px solid white;
+    border-radius: 82px 0 0 82px;
+    margin-right: -5px;
+    outline: none;
+}
+
+.search i {
+    padding: 9px 9px 11px;
+    border: 1px solid white;
+    border-radius: 0 82px 82px 0;
+    background: white;
+}
+
+.search a {
+    color: black;
+}
+
+/* dropdown */
+
+.drop {
+    background: #fff;
+    position: absolute;
+    top: 86px;
+    left: 0px;
+    /* border: 1px solid #15384e; */
+    display: none;
+}
+
+.drop span {
+    display: flex;
+    color: #0f4b85;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.drop span:hover {
+    background: #15384e;
+    color: #fff;
+}
+
+#one, #two, #three {
+    width: 35vh;
+}
+
+#four, #five {
+    width: 26vh;
+}
+
+/* carousel */
+
+.carousel {
+    height: 100vh;
+    min-height: 300px;
+}
+
+/* footer */
+
+footer {
+    background: #15384e;
+    color: #fff;
+    display: flex;
+    padding: 2rem 4rem;
+}
+
+.box1, .box2 {
+    width: 100vh;
+    padding: 0 5rem;
+}
+
+.box1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.social {
+    justify-content: center!important;
+}
+
+.social li a {
+    color: #fff;
+    font-size: 22px;
+    padding: 0 1rem;
+}
+
+.box2 span {
+    padding: 0 0 .3rem 0;
+    display: block
+}
+
+.button {
+    margin-top: 1.7rem;
+}
+
+.box2 .btn1, .box2 .btn2 {
+    display: inline;
+    border-radius: 3px;
+    margin-right: 1rem;
+}
+
+.btn1 {
+    background: #fff;
+    color: #15384e;
+    border: 1px solid #15384e;
+    padding: .7rem 3rem;
+
+}
+
+.btn2 {
+    background: #15384e;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .7rem 2rem;
+}
+
+.copyright{
+    text-align: center;
+    background: #fff;
+    color: #15384e;
+}
