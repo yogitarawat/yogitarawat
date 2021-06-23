@@ -36,7 +36,6 @@ header {
     z-index: 2;
 }
 
-
 .ham {
     position: fixed;
     width: 80px;
@@ -190,14 +189,16 @@ header .btn {
     color: black !important;
 }
 
-.hamsrl span{
+.hamsrl span {
     background: #fff;
 }
-.hamsrl  span::before{
-  background: #fff;
+
+.hamsrl span::before {
+    background: #fff;
 }
-.hamsrl  span::after{
- background: #fff;
+
+.hamsrl span::after {
+    background: #fff;
 }
 
 .main {
@@ -317,7 +318,8 @@ header .btn {
 }
 
 /* footer */
-footer{
+
+footer {
     background: #000;
     color: white;
     padding: 3rem 5rem;
@@ -326,26 +328,31 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-.box{
+
+.box {
     width: 30%;
     display: flex;
     flex-direction: column;
 }
-.box span{
+
+.box span {
     padding-top: 1.3rem;
 }
-.box p{
+
+.box p {
     display: inline;
 }
-.add{
+
+.add, .numb, .mail {
     display: flex;
 }
 
-span a{
+span a {
     color: white;
     padding-right: 1rem;
     font-size: 21px;
 }
+
 /* media query */
 
 /* MQ for max-width 1200px */
@@ -368,6 +375,23 @@ span a{
     .nav {
         width: 65%;
     }
+    footer {
+        padding: 3rem 3rem 1.5rem;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 40%;
+    }
+    footer>:first-child {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 2rem;
+    }
+    .box span {
+        padding-top: .7rem;
+    }
 }
 
 /* MQ for max-width 768px */
@@ -376,15 +400,19 @@ span a{
     .nav {
         display: none;
     }
-    .ham, .sidebar{
+    .ham, .sidebar {
         display: block;
     }
-    
     .section2 {
         margin-bottom: 1rem;
     }
-    .grid {
-        grid-template-areas: 'a' 'b' 'c';
+}
+
+/* MQ for max-width 713px */
+
+@media (max-width:713px) {
+    #a img, #b img, #c img {
+        width: 100px;
     }
     .grid2 {
         grid-template-areas: 'd e' 'f g' 'h i';
@@ -395,13 +423,28 @@ span a{
 
 @media (max-width:576px) {
     .container::before {
-        height: 93%;
+        height: 91%;
     }
     .sidebar {
         width: 33%;
     }
-    .grid, .grid2 {
-        grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i';
+    .grid {
+        grid-template-areas: 'a b' 'c c';
+    }
+    footer {
+        padding: 1.5rem 1.8rem;
+    }
+    footer>:first-child {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* MQ for max-width 557 */
+
+@media (max-width: 557px) {
+    .container::before {
+        height: 94%;
     }
 }
 
@@ -417,19 +460,57 @@ span a{
     .item p {
         font-size: 13px;
     }
-   
-    .section {
-        font-size: 20px;
+    .section, .section2 {
+        font-size: 22px;
+    }
+    .grid {
+        grid-template-areas: 'a b' 'c c';
+    }
+    footer {
+        flex-direction: column;
+        padding: 0 3rem 2rem;
+    }
+    .box {
+        width: 100%;
+        padding: 2rem 0 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.609);
     }
 }
 
-/* MQ for max-width 376px */
+/* MQ for max-width 428px */
 
-@media (max-width:376px) {
+@media (max-width:428px) {
+    .container::before {
+        height: 97%;
+    }
+    .grid, .grid2{
+        grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i';
+    }
+}
+
+/* MQ for max-width 393px */
+
+@media (max-width:393px) {
+    .container::before {
+        height: 93%;
+    }
     .btn {
         padding: .4rem .6rem;
     }
     .banner p {
         font-size: 14px;
+    }
+}
+
+/* MQ for max-width 346px */
+
+@media (max-width:346px) {
+    .container::before {
+        height: 95%;
+    }
+}
+@media (max-width:320px) {
+    .container::before {
+        height: 99%;
     }
 }
