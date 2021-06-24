@@ -487,6 +487,10 @@ span a {
     .grid, .grid2 {
         grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i';
     }
+    .section2 {
+        margin-top: -4rem;
+        margin-bottom: -2rem;
+    }
 }
 
 /* MQ for max-width 393px */
