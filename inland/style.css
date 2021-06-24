@@ -201,6 +201,15 @@ header .btn {
     background: #fff;
 }
 
+/* banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8rem
+}
+
 .main {
     height: 150px;
     display: flex;
@@ -209,15 +218,6 @@ header .btn {
     font-size: 45px;
     text-shadow: 2px 2px 3px white;
     text-align: center;
-}
-
-/* banner */
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 8rem
 }
 
 .banner p {
@@ -358,11 +358,11 @@ span a {
 /* MQ for max-width 1200px */
 
 @media (max-width:1200px) {
-    .section {
-        margin-top: 3rem;
-    }
     .container::before {
         height: 84%;
+    }
+    .section {
+        margin-top: 3rem;
     }
 }
 
@@ -370,10 +370,13 @@ span a {
 
 @media (max-width:992px) {
     .container::before {
-        height: 88%;
+        height: 87%;
     }
     .nav {
         width: 65%;
+    }
+    .section2 {
+        margin-top: 0;
     }
     footer {
         padding: 3rem 3rem 1.5rem;
@@ -411,6 +414,9 @@ span a {
 /* MQ for max-width 713px */
 
 @media (max-width:713px) {
+    .container::before {
+        height: 90%;
+    }
     #a img, #b img, #c img {
         width: 100px;
     }
@@ -419,11 +425,11 @@ span a {
     }
 }
 
-/* MQ for max-width 576px */
+/* MQ for max-width 557px */
 
-@media (max-width:576px) {
+@media (max-width:557px) {
     .container::before {
-        height: 91%;
+        height: 94%;
     }
     .sidebar {
         width: 33%;
@@ -431,20 +437,15 @@ span a {
     .grid {
         grid-template-areas: 'a b' 'c c';
     }
+    .section2 {
+        margin-top: 1.5rem;
+    }
     footer {
         padding: 1.5rem 1.8rem;
     }
     footer>:first-child {
         width: 100%;
         margin: 0;
-    }
-}
-
-/* MQ for max-width 557 */
-
-@media (max-width: 557px) {
-    .container::before {
-        height: 94%;
     }
 }
 
@@ -477,13 +478,13 @@ span a {
     }
 }
 
-/* MQ for max-width 428px */
+/* MQ for max-width 459px */
 
-@media (max-width:428px) {
+@media (max-width:459px) {
     .container::before {
-        height: 97%;
+        height: 98%;
     }
-    .grid, .grid2{
+    .grid, .grid2 {
         grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i';
     }
 }
@@ -492,7 +493,7 @@ span a {
 
 @media (max-width:393px) {
     .container::before {
-        height: 93%;
+        height: 94%;
     }
     .btn {
         padding: .4rem .6rem;
@@ -506,11 +507,12 @@ span a {
 
 @media (max-width:346px) {
     .container::before {
-        height: 95%;
+        height: 97%;
     }
 }
+
 @media (max-width:320px) {
     .container::before {
-        height: 99%;
+        height: 100%;
     }
 }
