@@ -1,7 +1,7 @@
 /* HEADER */
 
 .header_1 {
-    height: 56px;
+    height: 60px;
     border-top: 1px solid #dedede26;
     display: flex;
     justify-content: center;
@@ -34,8 +34,8 @@
     background: white;
     display: block;
     position: absolute;
-    left: 12px;
-    top: 15px;
+    left: 14px;
+    top: 12px;
     z-index: 50;
 }
 
@@ -338,7 +338,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0px auto;
-    height: 37px;
+    height: 35px;
     width: 980px;
 }
 
@@ -389,7 +389,7 @@
     top: 36px;
     left: 0px;
     z-index: 50;
-    height: 485px;
+    height: 490px;
     width: max-content;
     border-radius: 0 0 5px 5px;
     box-shadow: 0px 22px 30px -13px black;
@@ -411,19 +411,19 @@
 }
 
 .cat_lips ol {
-    height: 225px;
+    height: 230px;
 }
 
 .cat_face ol {
-    height: 438px;
+    height: 448px;
 }
 
 .cat_eye ol {
-    height: 350px;
+    height: 360px;
 }
 
 .cat_brush ol {
-    height: 435px;
+    height: 445px;
 }
 
 .cat_new ol li, .cat_eye ol li, .cat_lips ol li, .cat_face ol li, .cat_skin ol li, .cat_brush ol li {
@@ -460,7 +460,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px;
+    margin:20px 0 0px;
 }
 
 .best_seller hr {
@@ -472,7 +472,7 @@
 
 .owl-carousel .owl-item img {
    
-    width: 78% !important;
+    width: 58% !important;
     margin: auto;
 }
 
@@ -517,7 +517,7 @@
 
 .owl-item p {
     height: 80px;
-    margin-left: 22px;
+    margin: 1rem 3rem 0 2rem;
     color: black;
     font-family: sans-serif;
     font-size: 16px;
@@ -525,7 +525,7 @@
 
 .owl-item p1 {
     height: 30px;
-    margin-left: 22px;
+    margin-left: 33px;
     color: black;
     font-family: sans-serif;
     font-size: 16px;
@@ -685,6 +685,11 @@ footer {
 .contact {
     color: white;
     padding: 9px 0 7px 0px;
+    margin-top: 1.5rem;
+}
+.contact p{
+   padding-left: 2rem;
+   margin-top: -1.5rem;
 }
 
 .about ul {
@@ -865,11 +870,9 @@ footer {
         margin: -45px auto 20px;
     }
     .owl-item p {
-        font-size: 23px;
+        font-size: 21px;
     }
-    .owl-item p {
-        font-size: 23px;
-    }
+
     .owl-item p1 {
         font-size: 22px;
     }
