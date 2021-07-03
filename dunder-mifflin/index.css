@@ -117,7 +117,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 1000px;
-    margin: 0 auto 3rem;
+    margin: 1rem auto;
 }
 .main{
     width: 300px;
@@ -158,8 +158,17 @@ header {
     border: 1px solid black;
    
 }
+.main .btn .button:hover{
+    background: #15384e;
+    color: white;
+    border: none;
+}
 
-
+.wifi{
+    text-align: center;
+    color: rgb(153, 11, 11);
+    font-size: 14px;
+}
 /* footer */
 
 footer {
