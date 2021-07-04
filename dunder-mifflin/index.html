@@ -118,7 +118,7 @@
 
     <div class="main">
       <div class="header">Wi-Fi Router Free* to use</div>
-      <div class="para">with Hathway broadband subscription</div>
+      <div class="para">with Mifflin broadband subscription</div>
       <div class="img" style="margin-top: 1.5rem;">
         <img src="Broadbandpg.png" alt="">
       </div>
@@ -155,8 +155,55 @@
   </div>
 
   <p class="wifi">
-    **“WIFI device is the property of Hathway. Please return the device along with all accessories after termination of service.”
+    **“WIFI device is the property of Mifflin. Please return the device along with all accessories after termination of
+    service.”
   </p>
+
+  <!-- pricing -->
+  <div class="pricing">
+    <span>PRICING</span>
+    <p></p>
+  </div>
+  <div class="c_price">OUR COMPETING PRICES</div>
+
+  <div class="card-wrapper">
+    <div class="card">
+      <p>Free</p>
+      <p class="p_month">$0 / month</p>
+      <p>Unlimited Internet</p>
+      <p>Up to 40Mbps Speed</p>
+      <p>Includes Airtel Thanks benefit</p>
+      <p>Unlimited Local/STD Calls</p>
+      <input type="button" value="Buy Now">
+    </div>
+    <div class="card">
+      <p>Business</p>
+      <p class="p_month">$19 / month</p>
+      <p>Unlimited Internet</p>
+      <p>Up to 80Mbps Speed</p>
+      <p>Xstream DTH box with 1 month</p>
+      <p>Unlimited Local/STD Calls</p>
+      <input type="button" value="Buy Now">
+    </div>
+    <div class="card">
+      <p>Developer</p>
+      <p class="p_month">$29 / month</p>
+      <p>Unlimited Internet</p>
+      <p>Up to 100Mbps Speed</p>
+      <p>Xstream DTH box with 1 month</p>
+      <p>Unlimited Local/STD Calls</p>
+      <input type="button" value="Buy Now">
+    </div>
+    <div class="card">
+      <p>Ultimate</p>
+      <p class="p_month">$49 / month</p>
+      <p>Unlimited Internet</p>
+      <p>Up to 200Mbps Speed</p>
+      <p>Includes Airtel Thanks benefit</p>
+      <p>Unlimited Local/STD Calls</p>
+      <input type="button" value="Buy Now">
+    </div>
+  </div>
 
   <!-- footer -->
   <footer>
@@ -218,6 +265,12 @@
 
       $(".support").hover(function () {
         $("#five").slideToggle(200);
+      });
+
+
+      // card-hover
+      $(".card p:first-child").hover(function(){
+        $().css("border","1px solid #15384e");
       });
 
     });
