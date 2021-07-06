@@ -167,7 +167,7 @@
   <div class="c_price">OUR COMPETING PRICES</div>
 
   <div class="card-wrapper">
-    <div class="card">
+    <div class="card-1">
       <p>Free</p>
       <p class="p_month">$0 / month</p>
       <p>Unlimited Internet</p>
@@ -176,7 +176,7 @@
       <p>Unlimited Local/STD Calls</p>
       <input type="button" value="Buy Now">
     </div>
-    <div class="card">
+    <div class="card-1">
       <p>Business</p>
       <p class="p_month">$19 / month</p>
       <p>Unlimited Internet</p>
@@ -185,7 +185,7 @@
       <p>Unlimited Local/STD Calls</p>
       <input type="button" value="Buy Now">
     </div>
-    <div class="card">
+    <div class="card-1">
       <p>Developer</p>
       <p class="p_month">$29 / month</p>
       <p>Unlimited Internet</p>
@@ -194,7 +194,7 @@
       <p>Unlimited Local/STD Calls</p>
       <input type="button" value="Buy Now">
     </div>
-    <div class="card">
+    <div class="card-1">
       <p>Ultimate</p>
       <p class="p_month">$49 / month</p>
       <p>Unlimited Internet</p>
@@ -269,10 +269,12 @@
 
 
       // card-hover
-      $(".card p:first-child").hover(function(){
-        $().css("border","1px solid #15384e");
-      });
+      $(".card-1 p:first-child").hover(function () {
+        $(this).parent().css("border", "2px solid #15384e");
+      }, function () {
+        $(this).parent().css("border", "2px solid  rgb(204 198 198 / 29%)");
 
+      });
     });
   </script>
 
