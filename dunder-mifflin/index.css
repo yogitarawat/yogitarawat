@@ -23,7 +23,7 @@ header {
 
 .image img {
     width: 136px;
-    padding: 8px 10px;
+    padding: 14px 10px;
 }
 
 .navb {
@@ -203,10 +203,6 @@ header {
 }
 
 .card-wrapper {
-    /* display: flex;
-    justify-content: space-between;
-    width: 85%;
-    margin: 2rem auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -236,9 +232,6 @@ header {
     font-size: 24px;
 }
 
-/* .card-1 p:first-child:hover .card-1{
-   border: 2px solid #0f4b85;
-} */
 
 .card-1 p {
     text-align: center;
