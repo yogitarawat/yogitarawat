@@ -126,7 +126,7 @@ header {
     border: 1px solid #c7c5c5;
     border-top: 2px solid #15384e;
     padding: 1rem;
-    box-shadow:inset 0px -27px 96px -36px #15384e;
+    box-shadow: inset 0px -27px 96px -36px #15384e;
 }
 
 .main .header {
@@ -211,9 +211,8 @@ header {
 }
 
 .card-1 {
-    width:24%;
-    border:1px solid  rgb(204 198 198 / 29%);
-
+    width: 24%;
+    border: 1px solid rgb(204 198 198 / 29%);
 }
 
 .card-1 p:first-child {
@@ -232,7 +231,6 @@ header {
     font-size: 24px;
 }
 
-
 .card-1 p {
     text-align: center;
     padding: 0 1rem;
@@ -241,17 +239,71 @@ header {
 .card-1 input {
     width: 140px;
     display: block;
-    margin:2rem auto 1rem;
+    margin: 2rem auto;
     border-radius: 23px;
-    padding: .6rem;
+    padding: .8rem;
     background: #15384e;
     color: white;
     border: none;
 }
 
-.card-1 input:hover{
+.card-1 input:hover {
     text-decoration: underline;
 }
+
+/* exclusive benefits  */
+
+.benefit, .extra {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.extra {
+    font-size: 19px;
+    font-weight: 400;
+    padding-top: 1rem;
+    color: gray;
+}
+
+.line {
+    height: 1px;
+    background: rgb(75, 72, 72);
+    width: 40%;
+    margin: auto;
+}
+
+.exclusive {
+    background-image: url(mountain2.png);
+    background-color: #8080801f;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    height: 370px;
+}
+
+.box-content {
+    width: 240px;
+    padding:3rem 1rem 1rem;
+}
+
+.box-content img {
+    display: block;
+    width: 140px;
+    margin: auto;
+}
+
+.box-content p {
+    text-align: center;
+    font-size: 24px;
+    color: #2f2c2c;
+    font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.box-content .info {
+    font-size: 16px;
+}
+
 /* footer */
 
 footer {

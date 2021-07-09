@@ -17,6 +17,8 @@
 
   <!-- font-family -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
   <title>Best broadband plans in India</title>
 </head>
 
@@ -205,6 +207,41 @@
     </div>
   </div>
 
+  <!-- exclusive benefits -->
+  <div class="benefit">Exclusive Benefits</div>
+  <p class="line"></p>
+  <div class="extra">Our customers get extra services at no extra costs</div>
+  <div class="exclusive">
+    <div class="box-content">
+      <img src="infinity.svg" alt="">
+      <p>UNLIMITED</p>
+      <p class="info">Dont worry about data anymore! Surf, watch & play all day.</p>
+    </div>
+    <div class="box-content">
+      <img src="lightnings.svg" alt="">
+      <p>ULTRA FAST</p>
+      <p class="info">Experience Bufferless streaming & high-speed downloads with our technology</p>
+    </div>
+
+    <div class="box-content">
+      <img src="wire.svg" alt="">
+      <p>OFC</p>
+      <p class="info">High-speed internet access through two-way optical fiber cable (OFC) network.</p>
+    </div>
+    <div class="box-content">
+      <img src="ethernet.svg" alt="">
+      <p>ACN</p>
+      <p class="info">Advanced cable network infrastructure capable of supporting hi-speed internet.</p>
+    </div>
+    <div class="box-content">
+      <img src="imageedit.png" style="width: 183px;">
+      <p>SUPPORT</p>
+      <p class="info">Dedicated technical team to resolve all customer queries.</p>
+    </div>
+  </div>
+
+
+
   <!-- footer -->
   <footer>
     <div class="box1">
@@ -275,8 +312,24 @@
         $(this).parent().css("border", "2px solid  rgb(204 198 198 / 29%)");
 
       });
+
+      //box-content hover
+       $(".box-content").hover(function () {
+         $(this).find("img").css("width", "165px");
+       }, function () {
+         $(this).find("img").css("width", "145px");
+
+       });
+       $(".box-content:last-child").hover(function () {
+         $(this).find("img").css("width", "220px");
+       }, function () {
+         $(this).find("img").css("width", "191px");
+       });
+
+       
     });
   </script>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
