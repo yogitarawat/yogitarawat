@@ -284,13 +284,14 @@ header {
 
 .box-content {
     width: 240px;
-    padding:3rem 1rem 1rem;
+    padding: 3rem 1rem 1rem;
 }
 
 .box-content img {
     display: block;
-    width: 140px;
+    width: 110px;
     margin: auto;
+    padding-bottom: 1rem;
 }
 
 .box-content p {
@@ -302,6 +303,38 @@ header {
 
 .box-content .info {
     font-size: 16px;
+}
+
+/* experience / customers */
+
+.container-wrapper {
+    background-image: radial-gradient(circle, #15384e, #30495d, #485b6b, #5f6e7b, #77818a, #77818a, #77818a, #77818a, #5f6e7b, #485b6b, #30495d, #15384e);
+    margin: 1rem;
+}
+
+.cont {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.cont div {
+    border: 2px solid #fff;
+    width: 32%;
+    padding: .7rem 0 0;
+    margin: 2rem 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 19px;
+}
+.cont div img{
+    padding:.5rem 0 1rem;
+    width: 50px;
+}
+.cont div img:first-child{
+    height: 71px;
 }
 
 /* footer */
@@ -334,6 +367,10 @@ footer {
     padding: 0 1rem;
 }
 
+.social li a:hover {
+    color: darkgray;
+}
+
 .box2 span {
     padding: 0 0 .3rem 0;
     display: block
@@ -354,6 +391,10 @@ footer {
     color: #15384e;
     border: 1px solid #15384e;
     padding: .7rem 3rem;
+}
+
+.btn1:hover {
+    background: cornsilk;
 }
 
 .btn2 {
