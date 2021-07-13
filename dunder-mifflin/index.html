@@ -175,16 +175,16 @@
       <p>Up to 40Mbps Speed</p>
       <p>Includes Airtel Thanks benefit</p>
       <p>Unlimited Local/STD Calls</p>
-      <input type="button" value="Buy Now">
+      <input type="button" value="Buy Now" class="buynow">
     </div>
     <div class="card-1">
-      <p>Business</p>
+      <p class="buss">Business</p>
       <p class="p_month">$19 / month</p>
       <p>Unlimited Internet</p>
       <p>Up to 80Mbps Speed</p>
       <p>Xstream DTH box with 1 month</p>
       <p>Unlimited Local/STD Calls</p>
-      <input type="button" value="Buy Now">
+      <input type="button" value="Buy Now" class="buynow">
     </div>
     <div class="card-1">
       <p>Developer</p>
@@ -193,7 +193,7 @@
       <p>Up to 100Mbps Speed</p>
       <p>Xstream DTH box with 1 month</p>
       <p>Unlimited Local/STD Calls</p>
-      <input type="button" value="Buy Now">
+      <input type="button" value="Buy Now" class="buynow">
     </div>
     <div class="card-1">
       <p>Ultimate</p>
@@ -202,7 +202,7 @@
       <p>Up to 200Mbps Speed</p>
       <p>Includes Airtel Thanks benefit</p>
       <p>Unlimited Local/STD Calls</p>
-      <input type="button" value="Buy Now">
+      <input type="button" value="Buy Now" class="buynow">
     </div>
   </div>
 
@@ -325,10 +325,14 @@
 
 
       // card-hover
-      $(".card-1 p:first-child").hover(function () {
+      $(".buynow").hover(function () {
         $(this).parent().css("border", "2px solid #15384e");
+        $(this).closest(".card-1").children("p:first-child").css({"background":"#15384e","color":"#fff"});
+        // $(this).parent("p:first-child").css("background","#15384e");
       }, function () {
         $(this).parent().css("border", "2px solid  rgb(204 198 198 / 29%)");
+        $(this).closest(".card-1").children("p:first-child").css({"background":" rgb(204 198 198 / 29%)","color":"#000"});
+        
 
       });
 
