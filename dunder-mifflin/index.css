@@ -13,7 +13,7 @@ header {
     background-color: #15384e;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .image {
@@ -110,6 +110,36 @@ header {
 
 .carousel {
     height: 100vh;
+    position: relative;
+}
+
+.carousel-inner .carousel-item:first-child .back1-btn, .carousel-inner .carousel-item:nth-child(2) .back1-btn, .carousel-inner .carousel-item:last-child .back1-btn {
+    display: inline-block;
+    position: absolute;
+    left: 82px;
+    top: 250px;
+    padding: .7rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: #e73134;
+    z-index: 2;
+}
+
+.carousel-inner .carousel-item:nth-child(2) .back1-btn {
+    top: 398px;
+    left: 60px;
+}
+
+.carousel-inner .carousel-item:last-child .back1-btn {
+    top: 360px;
+    left: 60px;
+}
+
+.carousel-inner .carousel-item:first-child .back1-btn:hover, .carousel-inner .carousel-item:nth-child(2) .back1-btn:hover, .carousel-inner .carousel-item:last-child .back1-btn:hover {
+    background: #e73134;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 /* main */
@@ -118,7 +148,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     width: 1000px;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 .main {
@@ -175,7 +205,7 @@ header {
     text-align: center;
     color: rgb(153, 11, 11);
     font-size: 14px;
-    margin-bottom: 3rem;
+    margin: .7rem 0 3rem;
 }
 
 /* pricing */
@@ -250,7 +280,6 @@ header {
 .card-1 input:hover {
     text-decoration: underline;
 }
-
 
 /* exclusive benefits  */
 
@@ -331,11 +360,13 @@ header {
     border-radius: 7px;
     font-size: 19px;
 }
-.cont div img{
-    padding:.5rem 0 1rem;
+
+.cont div img {
+    padding: .5rem 0 1rem;
     width: 50px;
 }
-.cont div img:first-child{
+
+.cont div img:first-child {
     height: 71px;
 }
 
@@ -349,7 +380,6 @@ footer {
 }
 
 .box1, .box2 {
-    width: 100vh;
     padding: 0 5rem;
     cursor: pointer;
 }
@@ -358,6 +388,10 @@ footer {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+}
+
+.box1 ul li {
+    padding-right: 1rem;
 }
 
 .social {
@@ -413,4 +447,121 @@ footer {
     text-align: center;
     background: #fff;
     color: #15384e;
+}
+
+/* mediaquery */
+
+/* max-width:1300px */
+
+@media(max-width:1300px) {
+    .search {
+        width: 25%;
+    }
+    .box1 {
+        padding: 0px 2rem;
+    }
+    .main-wrapper {
+        margin-top: 4rem;
+    }
+    .card-wrapper {
+        padding: 1rem 1rem;
+    }
+}
+
+/* max-width:1200px */
+
+@media (max-width: 1200px) {
+    .carousel-inner .carousel-item:first-child .back1-btn {
+        top: 222px;
+        left: 67px;
+    }
+    .carousel-inner .carousel-item:nth-child(2) .back1-btn {
+        top: 358px;
+        left: 56px;
+    }
+    .carousel-inner .carousel-item:last-child .back1-btn {
+        top: 325px;
+        left: 56px;
+    }
+    .main-wrapper {
+        margin-top: 2rem;
+    }
+    .box1, .box2 {
+        padding: 0 3rem;
+    }
+}
+
+/* max-width:1112px */
+
+@media (max-width: 1112px) {
+    .carousel-inner .carousel-item:first-child .back1-btn {
+        top: 210px;
+        left: 63px;
+    }
+    .carousel-inner .carousel-item:nth-child(2) .back1-btn {
+        top: 330px;
+        left: 52px;
+    }
+    .carousel-inner .carousel-item:last-child .back1-btn {
+        top: 302px;
+        left: 52px;
+    }
+    .main-wrapper {
+        margin-top: -1rem;
+    }
+    .pricing {
+        padding-left: 3.2rem;
+    }
+    .c_price {
+        padding-left: 3rem;
+    }
+}
+
+/* max-width:1080 */
+
+@media(max-width:1080px) {
+    .search input {
+        width: 150px;
+        text-overflow: ellipsis;
+    }
+    .image {
+        width: 22%;
+    }
+    .main-wrapper {
+        margin-top: -2rem;
+    }
+    .box1, .box2 {
+        padding: 0 2rem;
+    }
+}
+
+/* max-width:1024px */
+
+@media(max-width:1024px) {
+    .carousel-inner .carousel-item:first-child .back1-btn {
+        top: 193px;
+        left: 58px;
+    }
+    .carousel-inner .carousel-item:nth-child(2) .back1-btn {
+        top: 315px;
+        left: 47px;
+    }
+    .carousel-inner .carousel-item:last-child .back1-btn {
+        top: 285px;
+        left: 47px;
+    }
+    .main-wrapper {
+        margin-top: -3.5rem;
+    }
+    .box1, .box2 {
+        padding: 0 1rem;
+    }
+}
+
+/* max-width:1000px */
+
+@media(max-width:1000px) {
+    .navb {
+        display: none;
+    }
 }
