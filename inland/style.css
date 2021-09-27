@@ -353,6 +353,11 @@ span a {
     font-size: 21px;
 }
 
+
+.rights{
+    padding: .4rem;
+    text-align: center;
+}
 /* media query */
 
 /* MQ for max-width 1200px */

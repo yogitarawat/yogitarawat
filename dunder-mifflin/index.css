@@ -242,12 +242,12 @@ header {
 
 .card-1 {
     width: 24%;
-    border: 1px solid rgb(204 198 198 / 29%);
+    border: 1px solid rgb(204 198 198 / 55%);
 }
 
 .card-1 p:first-child {
     padding: 1rem;
-    background-color: rgb(204 198 198 / 29%);
+    background-color: rgb(204 198 198 / 55%);
     font-size: 25px;
     margin-bottom: 2rem;
 }
@@ -563,5 +563,90 @@ footer {
 @media(max-width:1000px) {
     .navb {
         display: none;
+    }
+    .main-wrapper {
+        width: 900px;
+    }
+    .main {
+        width: 275px;
+    }
+    .img2 {
+        margin-top: 3rem!important;
+    }
+    .img3 {
+        margin-top: 2.1rem!important;
+    }
+}
+
+/* max-width:942px */
+
+@media(max-width:942px) {
+    .carousel-inner .carousel-item:first-child .back1-btn {
+        top: 177px;
+        left: 50px;
+    }
+    .carousel-inner .carousel-item:nth-child(2) .back1-btn {
+        top: 285px;
+        left: 43px;
+    }
+    .carousel-inner .carousel-item:last-child .back1-btn {
+        top: 265px;
+        left: 43px;
+    }
+    .main-wrapper {
+        margin-top: -6rem;
+    }
+}
+
+/* max-width:900px */
+
+@media(max-width:900px) {
+    .main-wrapper {
+        margin-top: -7rem;
+        width: 750px;
+    }
+    .main {
+        width: 230px;
+    }
+    .img img {
+        width: 130px!important;
+        display: block;
+        margin: auto;
+    }
+    .img3 img {
+        width: 150px!important;
+        height: 77px!important;
+    }
+    .wifi {
+        word-wrap: keep-all;
+    }
+    .card-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: max-content;
+    }
+    .card-1 {
+        width: 40%;
+        margin-bottom: 1.5rem;
+    }
+    .cont {
+        width: 83%;
+    }
+    .exclusive {
+        margin: 1rem 0;
+    }
+    .box-content img {
+        width: 85px;
+    }
+    footer {
+        flex-wrap: wrap;
+    }
+    .box1{
+        flex-basis: 100%;
+    }
+    .about {
+        width: max-content;
+        padding-left: 0;
+        margin-bottom: 1rem;
     }
 }
