@@ -66,7 +66,6 @@ header {
   height: 3px;
   border-radius: 50px;
   background: #fff;
-  background: #32328f;
 }
 .navbar-toggler-icon::before {
   content: "";
@@ -80,6 +79,11 @@ header {
   top: 10px;
   left: 0;
 }
+.navbar-nav {
+  width: 53%;
+  justify-content: space-between;
+  padding-right: 4rem;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
@@ -87,11 +91,57 @@ header {
   font-weight: 500;
 }
 
-.navbar-light .navbar-nav .nav-item:hover {
+.navbar-light .navbar-nav .nav-item:hover,
+.navbar-light .navbar-nav .nav-item:focus {
   color: #000 !important;
   background: #fff;
 }
 
+.menu {
+  display: none;
+  position: absolute;
+  right: -11.8rem;
+  width: 400px;
+}
+.menu .d-flex {
+  background-color: white;
+  list-style: none;
+}
+.menu .d-flex li a {
+  background: #323285;
+  color: white;
+}
+.menu:hover .nav-link {
+  color: #000 !important;
+}
+.line {
+  border-left: 1px solid rgb(203 201 201 / 38%);
+}
+.display {
+  display: block;
+}
+.navbar {
+  padding: 0 1rem;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+.nav-link {
+  padding: 1.8rem 2rem;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  width: 380px;
+}
+.dropdown-menu {
+  padding: 0;
+}
+.dropdown-menu li p {
+  padding: 0 1rem;
+}
+.dropdown-menu li a {
+  background: #323279;
+  color: #fff;
+}
 .form-control {
   border-radius: 0;
 }
@@ -119,7 +169,7 @@ header {
 
 .banner-text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -131,7 +181,7 @@ header {
   background: #23235a;
   border: 1px solid #23235a;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 2rem;
   margin: 0.5rem 0;
 }
 .banner a:hover {
@@ -139,30 +189,32 @@ header {
 }
 
 /* media query */
-@media (min-width: 992px) {
-  .navbar {
-    padding: 0 1rem;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-  }
+
+@media (max-width: 1150px) {
   .navbar-nav {
-    padding-right: 4rem;
+    padding-right: 2rem;
   }
-  .nav-link {
-    padding: 1.8rem 2rem;
+}
+
+@media (max-width: 1030px) {
+  .navbar-nav {
+    width:55%;
+    padding-right: 1rem;
   }
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    width: 380px;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand{
+    padding-top: 1rem;
   }
-  .dropdown-menu {
-    padding: 0;
-  }
-  .dropdown-menu li p {
-    padding: 0 1rem;
-  }
-  .dropdown-menu li a {
-    background: #323279;
-    color: #fff;
-  }
+ .nav-link{
+   padding: .2rem 0;
+ }
+ .menu{
+   right: 7.3rem;
+ }
+
+ form{
+   margin-bottom: 2rem;
+ }
 }
