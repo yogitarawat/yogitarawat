@@ -1,0 +1,35 @@
+.p-data {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  text-align: center;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid var(--main);
+}
+
+/* media-query */
+@media screen and (min-width: 768px) {
+  .p-data {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+  }
+  .profile-img {
+    margin: 0;
+  }
+  .info{
+      padding-left: 1rem;
+  }
+  .button {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}

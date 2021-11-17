@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME-ONGC</title>
-      <!-- css -->
-      <link rel="stylesheet" href="css/header.css">
-      <!-- bootstrap link  -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- bootstrap-icon-link  -->
-      <link rel="stylesheet" href="css/bootstrap-icons-1.7.1/bootstrap-icons.css">
+    <title>John Doe | Profile</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <!-- bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap-icon-link  -->
+    <link rel="stylesheet" href="css/bootstrap-icons-1.7.1/bootstrap-icons.css">
 </head>
 
 <body>
-
+    <!-- header  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -69,9 +71,27 @@
             </div>
         </div>
     </nav>
+    <!-- header  -->
 
-    <!-- body -->
+    <!-- body  -->
+
     <div class="main">
+        <div class="p-data">
+            <div class="profile-img">
+                <img src="images/amit.jpg" alt="profile-img" width="100%">
+            </div>
+            <span class="info">
+                <h3>John Doe</h3>
+                <b>Retired</b>
+            </span>
+            <div class="button mt-3">
+                <a href="#" class="btn btn-primary mr-1">Edit Profile</a>
+                <a href="#" class="btn btn-secondary">Album</a>
+            </div>
+        </div>
+
+       <div class="line"></div>
+
         <div class="con-post">
             <input type="text" placeholder="Write something here" class="mb-4">
             <div class="d-flex align-items-center">
@@ -124,6 +144,8 @@
             </div>
         </div>
     </div>
+
+
 
 
     <script src="js/jquery.js"></script>
