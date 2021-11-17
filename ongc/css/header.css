@@ -1,0 +1,148 @@
+:root {
+  --main: #b54a4e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0 !important;
+}
+.navbar-toggler:focus {
+  border: 0;
+  outline: 0 !important;
+}
+span.navbar-toggler-icon {
+  background-image: unset !important;
+  position: relative;
+  width: 58px;
+  height: 35px;
+  border: none;
+  background: transparent;
+}
+.navbar-toggler-icon span {
+  background: var(--main);
+  height: 3px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+.navbar-toggler-icon span::before {
+  content: "";
+  width: 40px;
+  background: var(--main);
+  height: 3px;
+  position: absolute;
+  top: -9px;
+  right: 0;
+  transition: all 0.2s ease;
+}
+
+.navbar-toggler-icon span::after {
+  content: "";
+  width: 40px;
+  background: var(--main);
+  height: 3px;
+  position: absolute;
+  top: 9px;
+  right: 0;
+  transition: all 0.2s ease;
+}
+
+.navbar-toggler-icon.focus span {
+  background: transparent;
+}
+
+.focus span::before {
+  transform: rotate(-45deg);
+  top: 0px;
+  position: absolute;
+}
+
+.focus span::after {
+  transform: rotate(45deg);
+  top: 0px;
+  position: absolute;
+}
+.search-max {
+  display: none;
+}
+.search {
+  background: var(--main);
+  color: #fff;
+}
+
+input.form-control {
+  width: 54%;
+}
+
+input.form-control,
+input.form-control:focus,
+button.search {
+  border-radius: 0;
+  border-color: var(--main);
+  border: 2px solid var(--main);
+}
+
+.nav-item {
+  text-align: right;
+}
+
+/* media-query */
+@media screen and (min-width: 576px) {
+  input.min,
+  button.min {
+    display: none;
+  }
+  .search-max {
+    display: block;
+    width: 55%;
+  }
+  .form-control.max {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+  }
+  .search-max {
+    width: 40%;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  .nav-link {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-nav {
+    width: 75%;
+    justify-content: space-between;
+  }
+  .search-max {
+    margin-left: 9rem;
+  }
+  .search-max {
+    width: 24%;
+  }
+}
