@@ -132,7 +132,8 @@ button.search {
 .con-post .add i {
   font-size: 17px;
   color: #fff;
-  background: #bf5054fa;
+ 
+  background: var(--main);
   padding: 5px 12px;
   border-radius: 3px 0 0 3px;
   border: 1px solid var(--main);
@@ -140,7 +141,7 @@ button.search {
 
 .con-post input[type="submit"],
 .con-post .add span {
-  background: var(--main);
+  background: #cb585d;
   color: #fff;
   padding: 5px 20px;
   border-radius: 0 4px 4px 0;
