@@ -85,12 +85,102 @@
                 <b>Retired</b>
             </span>
             <div class="button mt-3">
-                <a href="#" class="btn btn-primary mr-1">Edit Profile</a>
+                <button type="button" class="btn btn-primary mr-1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Edit Profile
+                </button>
+                <!-- <a href="#" class="btn btn-primary mr-1"></a> -->
                 <a href="#" class="btn btn-secondary">Album</a>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header mx-auto">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="edit">
+                                <div class="edit-img">
+                                    <img src="images/amit.jpg" alt="profile-img" width="100%">
+                                </div>
+                                <label for="add-image" class="add">
+                                    <input type="file" id="add-image" class="d-none">
+                                    <span class="btn btn-primary mt-2">Change Profile Photo</span>
+                                </label>
+                            </div>
+                            <div class="edit-info">
+                                <label for="name">
+                                    <span>Name</span>
+                                    <input type="text" name="name" value="john doe" id="name">
+                                </label>
+
+                                <label for="user">
+                                    <span>Username</span>
+                                    <input type="text" name="user" value="johndoe03" id="user">
+                                </label>
+
+                                <label for="dob">
+                                    <span>Date of birth</span>
+                                    <input type="date" name="dob" value="" id="dobb">
+                                </label>
+
+                                <label for="gender">
+                                    <span>Gender</span>
+                                    <input type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample" value="Female" id="gender">
+                                    </label>
+
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <label for="male">
+                                                <input type="radio" name="male" id="male">
+                                                <b>Male</b>
+                                            </label>
+                                            <label for="female">
+                                                <input type="radio" name="female" id="female">
+                                                <b>Female</b>
+                                            </label>
+                                            <label for="others">
+                                                <input type="radio" name="others" id="others">
+                                                <b>Others</b>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- modal  -->
+                                
+
+                                <label for="email">
+                                    <span>Email</span>
+                                    <input type="email" name="email" value="johndoe12@gmail.com" id="email">
+                                </label>
+
+                                <label for="phone">
+                                    <span>Phone number</span>
+                                    <input type="number" name="number" value="9789567896" id="phone">
+                                </label>
+
+                                <label for="marry">
+                                    <span>Marriage anniversary</span>
+                                    <input type="date" name="marry" value="" id="marry">
+                                </label>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal  -->
         </div>
 
-       <div class="line"></div>
+        <div class="line"></div>
 
         <div class="con-post">
             <input type="text" placeholder="Write something here" class="mb-4">

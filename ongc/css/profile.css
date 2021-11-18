@@ -15,6 +15,46 @@
   border-bottom: 1px solid var(--main);
 }
 
+/* modal  */
+.edit {
+  text-align: center;
+}
+.edit-img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+}
+.edit-info label {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.edit-info span {
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
+}
+.edit-info label input {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 4px 10px;
+}
+/* modal  */
+
+label input[type=button]{
+    background: none;
+    width: 100%;
+    text-align: left;
+}
+
+.collapse label{
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.collapse label input{
+    margin: 6px 7px 0 0;
+}
 /* media-query */
 @media screen and (min-width: 768px) {
   .p-data {
@@ -25,11 +65,35 @@
   .profile-img {
     margin: 0;
   }
-  .info{
-      padding-left: 1rem;
+  .info {
+    padding-left: 1rem;
   }
   .button {
     margin-top: 0;
     margin-left: auto;
+  }
+
+  /* modal  */
+  .edit-info {
+    padding: 0 3rem;
+  }
+  .edit-info label {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .edit-info label span{
+    width: 40%;
+    text-align: right;
+  }
+
+  .card-body{
+    width: 52%;
+    margin-left: auto;
+  }
+  label input[type=button]{
+      width: 50%;
+  }
+  .collapse label{
+      justify-content: left;
   }
 }
