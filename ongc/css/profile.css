@@ -41,19 +41,19 @@
 }
 /* modal  */
 
-label input[type=button]{
-    background: none;
-    width: 100%;
-    text-align: left;
+label input[type="button"] {
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.collapse label{
-    flex-direction: row;
-    margin-top: 0;
+.collapse label {
+  flex-direction: row;
+  margin-top: 0;
 }
 
-.collapse label input{
-    margin: 6px 7px 0 0;
+.collapse label input {
+  margin: 6px 7px 0 0;
 }
 /* media-query */
 @media screen and (min-width: 768px) {
@@ -81,19 +81,25 @@ label input[type=button]{
     flex-direction: row;
     justify-content: space-around;
   }
-  .edit-info label span{
+  .edit-info label span {
     width: 40%;
     text-align: right;
   }
 
-  .card-body{
+  .card-body {
     width: 53%;
     margin-left: auto;
   }
-  label input[type=button]{
-      width: 50%;
+  label input[type="date"] {
+    padding: 4px 17px;
   }
-  .collapse label{
-      justify-content: left;
+  label input[type="button"] {
+    width: 55%;
+  }
+  .collapse label {
+    justify-content: left;
+  }
+  .modal-content .modal-footer {
+      padding: 1rem 4rem;
   }
 }
