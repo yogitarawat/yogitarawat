@@ -99,6 +99,11 @@ button.search {
   border: 2px solid var(--main);
 }
 
+.search.min,
+.search.max {
+  background: var(--main);
+  color: #fff;
+}
 .nav-item {
   text-align: right;
 }
