@@ -47,12 +47,12 @@ label input[type="button"] {
   text-align: left;
 }
 
-.collapse label {
+#collapseExample .card label {
   flex-direction: row;
   margin-top: 0;
 }
 
-.collapse label input {
+#collapseExample .card label input {
   margin: 6px 7px 0 0;
 }
 /* media-query */
@@ -96,7 +96,7 @@ label input[type="button"] {
   label input[type="button"] {
     width: 55%;
   }
-  .collapse label {
+  #collapseExample .card label {
     justify-content: left;
   }
   .modal-content .modal-footer {
