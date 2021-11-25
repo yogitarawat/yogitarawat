@@ -16,6 +16,9 @@
 }
 
 /* modal  */
+.modal-content .modal-body{
+  padding: 1rem 4rem;
+}
 .edit {
   text-align: center;
 }
@@ -75,6 +78,9 @@ label input[type="button"] {
   }
 
   /* modal  */
+  .modal-content .modal-body{
+    padding: 1rem;
+  }
   .edit-info {
     padding: 0 3rem;
   }
@@ -88,7 +94,7 @@ label input[type="button"] {
   }
   .edit-info label input,
   .edit-info label textarea {
-    width: 75%;
+    width: 90%;
   }
   .card-body {
     width: 55%;
