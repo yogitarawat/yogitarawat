@@ -94,7 +94,7 @@ label input[type="button"] {
   }
   .edit-info label input,
   .edit-info label textarea {
-    width: 90%;
+    width: 75%;
   }
   .card-body {
     width: 55%;
