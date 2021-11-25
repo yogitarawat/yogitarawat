@@ -34,7 +34,8 @@
   text-align: left;
   padding: 5px;
 }
-.edit-info label input {
+.edit-info label input,
+.edit-info label textarea {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   padding: 4px 10px;
@@ -85,7 +86,10 @@ label input[type="button"] {
     width: 40%;
     text-align: right;
   }
-
+  .edit-info label input,
+  .edit-info label textarea {
+    width: 55%;
+  }
   .card-body {
     width: 55%;
     margin-left: auto;
