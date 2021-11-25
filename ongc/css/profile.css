@@ -32,7 +32,7 @@
 .edit-info span {
   font-weight: bold;
   text-align: left;
-  padding: 5px;
+  padding: 5px 15px;
 }
 .edit-info label input,
 .edit-info label textarea {
@@ -88,7 +88,7 @@ label input[type="button"] {
   }
   .edit-info label input,
   .edit-info label textarea {
-    width: 55%;
+    width: 75%;
   }
   .card-body {
     width: 55%;
@@ -97,9 +97,6 @@ label input[type="button"] {
   }
   label input[type="date"] {
     padding: 4px 17px;
-  }
-  label input[type="button"] {
-    width: 55%;
   }
   #collapseExample .card label {
     justify-content: left;
