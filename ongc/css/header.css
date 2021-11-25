@@ -79,6 +79,10 @@ span.navbar-toggler-icon {
   top: 0px;
   position: absolute;
 }
+.navbar-light .navbar-nav .nav-item .nav-link:focus,
+.navbar-light .navbar-nav .nav-item .nav-link:hover{
+  color: #161515;
+}
 .search-max {
   display: none;
 }
