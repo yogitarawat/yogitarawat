@@ -101,81 +101,89 @@
                             <h5 class="modal-title ms-auto ps-4" id="exampleModalLabel">Edit Profile</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <div class="edit">
-                                <div class="edit-img">
-                                    <img src="images/amit.jpg" alt="profile-img" width="100%">
-                                </div>
-                                <label for="add-image" class="add">
-                                    <input type="file" id="add-image" class="d-none">
-                                    <span class="btn btn-primary mt-2">Change Profile Photo</span>
-                                </label>
-                                <div class="re_photo">
-                                    <input class="btn btn-danger mt-2" type="button" value="Remove Photo">
-                                </div>
-                            </div>
-                            <div class="edit-info">
-                                <label for="bio">
-                                    <span>Bio</span>
-                                    <textarea style="overflow:hidden" id="bio" rows="2"></textarea>
-                                </label>
 
-                                <label for="c_deg">
-                                    <span>Current Designation</span>
-                                    <input type="text" name="c_deg" value="" id="c_deg">
-                                    <!-- <select id="c_deg">
+                        <div class="modal-body">
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <div class="edit">
+                                    <div class="edit-img">
+                                        <img src="images/amit.jpg" alt="profile-img" width="100%">
+                                    </div>
+                                    <div class="c-profile">
+
+                                        <label for="add-image" class="add">
+                                            <input type="file" id="add-image" class="d-none">
+                                            <span class="btn btn-sm btn-primary mt-2">Change</span>
+                                        </label>
+                                        <div class="re_photo">
+                                            <input class="btn btn-sm btn-danger mt-2" type="button" value="Remove">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="edit-info">
+                                    <label for="bio">
+                                        <span>Bio</span>
+                                        <textarea style="overflow:hidden" id="bio" rows="2"></textarea>
+                                    </label>
+
+                                    <label for="c_deg">
+                                        <span>Current Designation</span>
+                                        <input type="text" name="c_deg" value="" id="c_deg">
+                                        <!-- <select id="c_deg">
                                         <option value=""></option>
                                         <option value="Retried"></option>
                                         <option value=""></option>
                                         <option value=""></option>
                                         <option value=""></option>
                                     </select> -->
-                                </label>
+                                    </label>
 
-                                <label for="dob">
-                                    <span>Date of birth</span>
-                                    <input type="date" name="dob" value="" id="dob">
-                                </label>
+                                    <label for="dob">
+                                        <span>Date of birth</span>
+                                        <input type="date" name="dob" value="" id="dob">
+                                    </label>
 
-                                <label for="gender">
-                                    <span>Gender</span>
-                                    <input type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                                        aria-expanded="false" aria-controls="collapseExample" value="" id="gender">
-                                </label>
+                                    <label for="gender">
+                                        <span>Gender</span>
+                                        <input type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                            aria-expanded="false" aria-controls="collapseExample" value="" id="gender">
+                                    </label>
 
-                                <div class="collapse" id="collapseExample">
-                                    <div class="card card-body">
-                                        <label for="male">
-                                            <input type="radio" name="gender" value="male" id="male">
-                                            <b>Male</b>
-                                        </label>
-                                        <label for="female">
-                                            <input type="radio" name="gender" value="female" id="female">
-                                            <b>Female</b>
-                                        </label>
-                                        <label for="others">
-                                            <input type="radio" name="gender" value="others" id="others">
-                                            <b>Others</b>
-                                        </label>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <label for="male">
+                                                <input type="radio" name="gender" value="male" id="male">
+                                                <b>Male</b>
+                                            </label>
+                                            <label for="female">
+                                                <input type="radio" name="gender" value="female" id="female">
+                                                <b>Female</b>
+                                            </label>
+                                            <label for="others">
+                                                <input type="radio" name="gender" value="others" id="others">
+                                                <b>Others</b>
+                                            </label>
+                                        </div>
                                     </div>
+
+                                    <label for="interst">
+                                        <span>Interest</span>
+                                        <input type="text" name="interest" value="" id="interst">
+                                    </label>
+
+                                    <label for="marry">
+                                        <span>Marriage anniversary</span>
+                                        <input type="date" name="marry" value="" id="marry">
+                                    </label>
+
+
                                 </div>
-
-                                <label for="interst">
-                                    <span>Interest</span>
-                                    <input type="text" name="interest" value="" id="interst">
-                                </label>
-
-                                <label for="marry">
-                                    <span>Marriage anniversary</span>
-                                    <input type="date" name="marry" value="" id="marry">
-                                </label>
-
-
-                            </div>
                         </div>
                         <div class="modal-footer mx-auto mb-3">
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-success">Save changes</button>
                         </div>
+                        
+                        </form>
                     </div>
                 </div>
             </div>
