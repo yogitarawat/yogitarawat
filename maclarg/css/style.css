@@ -379,6 +379,25 @@ header {
   }
 }
 
+
+/* owl-carousel */
+
+.owl-carousel .item .card img,
+.card-body{
+  width:90%;
+  margin: auto;
+
+}
+
+.owl-carousel .item{
+}
+
+.card-body .btn{
+  background: #23235a;
+  color:#fff;
+}
+
+
 /* media query */
 
 @media screen and (min-width: 440px) {
