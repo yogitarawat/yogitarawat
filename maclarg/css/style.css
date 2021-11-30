@@ -173,7 +173,8 @@ header {
 }
 .banner-text {
   text-align: center;
-  height: 135px;
+  height: 170px;
+  margin: 0 0.5rem;
   border-top: 4px solid #23235a;
   border-left: 4px solid #23235a;
   border-right: 4px solid #23235a;
@@ -222,12 +223,11 @@ header {
   color: #000;
 }
 .banner-heading {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem;
 }
-
 .banner-link {
-  margin-top: -27px;
-}
+  margin-top: -5px;
+} 
 .banner a {
   background: #23235a;
   border: 1px solid #23235a;
@@ -389,7 +389,8 @@ header {
 
 }
 
-.owl-carousel .item{
+.owl-carousel{
+  margin: 0 1rem;
 }
 
 .card-body .btn{
@@ -399,6 +400,10 @@ header {
 
 
 /* media query */
+@media screen and (min-width: 380px) {
+  .banner-text {
+    height: 144px;
+}
 
 @media screen and (min-width: 440px) {
   .animate-text-con {
@@ -429,6 +434,9 @@ header {
   .banner-text h1 {
     font-size: 2rem;
   }
+  .banner-link {
+    margin-top: -8px;
+}
 }
 @media (min-width: 768px) {
   .learn p {
@@ -449,9 +457,7 @@ header {
   }
 }
 @media (min-width: 992px) {
-  .learn p {
-    /* font-size: ; */
-  }
+ 
   .learn-text {
     display: flex;
     align-items: center;
@@ -480,10 +486,10 @@ header {
 }
 @media (min-width: 1200px) {
   .banner-text {
-    height: 211px;
+    height: 180px;
   }
   .banner-text h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .banner a {
     padding: 0.7rem 2rem;
