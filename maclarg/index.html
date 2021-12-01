@@ -10,14 +10,31 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <!-- style css -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- OwlCarousel -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <!-- slider.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <!-- <div class="color"></div> -->
     <div class="header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -84,8 +101,6 @@
   <!-- banner -->
   <div class="banner">
     <div class="color"></div>
-    <!-- <img src="images/bann-c.jpg" alt="" /> -->
-    <!-- <div class="banner-img"></div> -->
     <div class="banner-text-con">
       <div class="banner-text backdrop-blur">
         <div class="banner-heading">
@@ -107,7 +122,6 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 animate-text-con">
-          <!-- <img src="images/svg-1.svg"> -->
           <div class="animate four">
             <span>L</span>
             <span>e</span>
@@ -163,97 +177,59 @@
   </div>
   <hr width="80%" class="mx-auto" />
 
-
-  <!-- OwlCarousel -->
+  <!-- Swiper -->
   <h3 class="text-center pt-2 px-3">Tech Guides</h3>
-  <div class="owl-carousel owl-theme d-block">
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/welcome little one!(2).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">XLR Cable</h5> 
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn">Full Guide</a>
-        </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/welcome little one!(2).png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/welcome little one!(3).png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/welcome little one!(3).png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/Mike.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/Mike.png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/Jbl pulse charging  issue.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/Jbl pulse charging  issue.jpg" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/NOT CHARINT.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/NOT CHARINT.png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/welcome little one!(2).png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
-    </div>
-    <div class="item">
-      <div class="card py-3" style="width: 18rem; margin: auto;">
-        <img src="images/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Full Guide</a>
-        </div>
+      <div class="swiper-slide">
+        <img src="images/NOT CHARINT.png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
       </div>
+      <div class="swiper-slide">
+        <img src="images/welcome little one!(2).png" />
+        <p class="text-center">XLR Cable</p>
+        <a href="#" class="btn">Full Guide</a>
+      </div>
+
     </div>
+    <div class="swiper-pagination"></div>
   </div>
-
-
-
-
-
-
 
 
 
@@ -294,39 +270,36 @@
         }
       });
 
-
-      // owlcarousel
-      $('.owl-carousel').owlCarousel({
-        loop: false,
-        rewind: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          576: {
-            items: 2
-          },
-          768: {
-            items: 3
-          },
-          992: {
-            items: 3
-          },
-          1200: {
-            items: 3
-          }
-        }
-      });
-
     });
 
 
   </script>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      loop: true,
+    });
+  </script>
 </body>
 
 </html>
